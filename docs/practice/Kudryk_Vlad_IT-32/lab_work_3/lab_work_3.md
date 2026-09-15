@@ -9,6 +9,7 @@
 erDiagram
     dishes ||--o{ orders : "доставляє s1"
 
+ erDiagram
     dishes {
         int id PK
         string name
@@ -33,3 +34,6 @@ erDiagram
         string address
         string status
     }
+
+    dishes ||--o{ orders : "contains"
+    couriers ||--o{ orders : "delivers"
