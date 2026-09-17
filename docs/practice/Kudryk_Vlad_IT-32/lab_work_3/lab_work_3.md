@@ -6,11 +6,18 @@
 
 ## Завдання 1. ER-діаграма повної схеми (Mermaid)
 
+<<<<<<< HEAD
 ```mermaid
 erDiagram
     dishes ||--o{ orders : "включена в"
     couriers ||--o{ orders : "доставляє"
 
+=======
+erDiagram
+    dishes ||--o{ orders : "доставляє s1"
+
+ erDiagram
+>>>>>>> d4fc12daaaba8574d44a00c89aeb1523bd1ae27f
     dishes {
         int id PK
         string name
@@ -34,4 +41,11 @@ erDiagram
         date order_date
         string address
         string status
+<<<<<<< HEAD
     }
+=======
+    }
+
+    dishes ||--o{ orders : "contains"
+    couriers ||--o{ orders : "delivers"
+>>>>>>> d4fc12daaaba8574d44a00c89aeb1523bd1ae27f
